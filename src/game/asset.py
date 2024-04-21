@@ -62,10 +62,6 @@ class AssetType(Enum):
 
 
 # Sectors
-class Sector(ABC):
-    def __init__(self) -> None:
-        super().__init__()
-
 class Sector(Enum):
     ENERGY = "Energy"
     MATERIALS = "Materials"
@@ -75,6 +71,7 @@ class Sector(Enum):
     SEMICONDUCTORS = "Semiconductors"
     COMMUNICATION = "CommunicationServices"
     REAL_ESTATE = "RealEstate"
+    CONSUMER_GOODS = "ConsumerGoods"
 
 
 
@@ -88,7 +85,7 @@ class Asset(object):
         self._price: int = price
         self._interest_rate: float = interest_rate
         self._type: AssetType = AssetType(type.capitalize())
-        self._sector: Sector = Sector(sector.capitalize())
+        self._sector: Sector = Sector(sector)
         self._invested_amount: int = 0
         self._last_strategy_change_turn: int = -STRATEGY_CHANGE_INTERVAL
 
@@ -156,6 +153,10 @@ class Asset(object):
     @property
     def price(self) -> int:
         return self._price
+
+    @property
+    def sector(self) -> Sector:
+        return self._sector
         
     @property
     def interest_rate(self) -> float:

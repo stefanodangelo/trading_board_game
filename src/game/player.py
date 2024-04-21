@@ -1,4 +1,4 @@
-from src.game.asset import Asset
+from src.game.asset import Asset, AssetType
 from src.utils.settings import INITIAL_CAPITAL
 from typing import Optional, Set
 
@@ -62,6 +62,15 @@ class Player(object):
     @property
     def capital_invested(self) -> int:
         return sum([asset.invested_amount for asset in self._portfolio.values()])
+    
+    @property
+    def is_portfolio_diversified(self) -> bool:
+        # A portfolio is diversified when it has at least one asset of each type
+        return len(set([asset.type for asset in self._portfolio.values()])) == len(AssetType)
+    
+    @property
+    def num_sector_investments(self) -> int:
+        return len(set([asset.sector for asset in self._portfolio.values()]))
 
     @name.setter
     def name(self, name: str) -> None:

@@ -3,7 +3,8 @@ from random import shuffle
 from typing import Iterable
 from src.game.player import Player
 from src.game.phase import Phase
-from src.utils.settings import NUM_PLAYERS, WINNING_CAPITAL_THRESHOLD, MAX_TURNS
+from src.game.asset import OnHold
+from src.utils.settings import NUM_PLAYERS, CAPITAL_THRESHOLD_TO_WIN, MIN_DIFFERENT_SECTORS_TO_WIN
 
 class GameStatus(Enum):
     OK = 0
@@ -51,13 +52,19 @@ class Game(object):
         # Advance to next turn
         self._current_turn += 1
 
-    def _check_victory(self) -> bool:
-        if self.current_turn <= MAX_TURNS:
-            return False
-        
+    def _check_victory(self) -> bool:      
+        """
+            Victory is triggered when any player has reached the capital threshold with a diversified portfolio, i.e. with at least one asset of each type and one for the minimum number of required sectors.
+            In addition, none of their assets must be on hold.
+        """
         highest_capital: int = 0
         for p in self._players:
-            if p.capital >= WINNING_CAPITAL_THRESHOLD:
+            if (
+                p.capital >= CAPITAL_THRESHOLD_TO_WIN
+                and p.num_sector_investments >= MIN_DIFFERENT_SECTORS_TO_WIN
+                and p.is_portfolio_diversified
+                and len([asset for asset in p.assets if isinstance(asset.status, OnHold)]) == 0
+            ):
                 self.winner = p
                 return True
             elif p.capital > highest_capital:

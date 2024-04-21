@@ -1,14 +1,128 @@
-{    
-    "1": {
-        "name": "",
-        "description": "",
-        "type": "",
-        "impacted_assets": ""
-    },
-    "2": {
-        "name": "",
-        "description": "",
-        "type": "",
-        "impacted_assets": ""
-    }
+{
+  "1": {
+    "name": "",
+    "description": "Ronaldo replaces Coca-Cola bottles with regular water at a press release. If you own Coca-Cola, next turn you will lose 20% of your investment.",
+    "type": "micro",
+    "has_impact on_key": "name",
+    "has_impact_on_value": "Coca-Cola"
+  },
+  "2": {
+    "name": "Global Chip Shortage",
+    "description": "Chip factories reached full capacity due to worldwide demand being way higher than supply. Every player loses all their investments in Technology assets (if they own any).",
+    "type": "macro",
+    "has_impact on_key": "sector",
+    "has_impact_on_value": "Technology"
+  },
+  "3": {
+    "name": "Dogecoin Soars After Elon Musk Tweet",
+    "description": "Elon Musk tweets a picture of his dog \"Floki\" wearing a Dogecoin t-shirt. Dogecoin price jumps 100%, confusing financial analysts worldwide. If you own Dogecoin, next turn you gain 50% of your investment.",
+    "type": "micro",
+    "has_impact_on_key": "name",
+    "has_impact_on_value": "Dogecoin"
+  },
+  "4": {
+    "name": "Unexpected Cat Food Recall",
+    "description": "A major cat food brand recalls their product due to potential health risks. Cat owners panic-buy alternative brands, causing a temporary shortage and price increase in the Consumer Goods sector. All Consumer Goods assets lose 5% next turn, except companies producing cat food (which gain 10%).",
+    "type": "micro",
+    "has_impact_on_key": "sector",
+    "has_impact_on_value": "ConsumerGoods"
+  },
+  "5": {
+    "name": "Rare Pokémon Card Sells for Millions",
+    "description": "A rare Pokémon card from the early 90s sells for millions at an auction, sparking renewed interest in collectible card games. Trading card companies in the Consumer Goods sector see a temporary stock price increase of 15% next turn.",
+    "type": "micro",
+    "has_impact_on_key": "sector",
+    "has_impact_on_value": "ConsumerGoods"
+  },
+  "6": {
+    "name": "Oil Prices Plummet After Saudi Arabia Discovers Massive Chocolate Reserves",
+    "description": "Scientists in Saudi Arabia discover a massive underground reservoir of high-quality chocolate. Oil prices plummet as the world switches to a tastier energy source. Energy sector assets lose 30% next turn.",
+    "type": "macro",
+    "has_impact_on_key": "sector",
+    "has_impact_on_value": "Energy"
+  },
+  "7": {
+    "name": "Fast-Food Chain Offers Free Fries for Life to Anyone With the Name 'Wendy'",
+    "description": "A popular fast-food chain launches a marketing campaign offering free fries for life to anyone named \"Wendy\". The surge in name changes overwhelms government agencies, causing temporary market instability. All asset values decrease by 2% next turn.",
+    "type": "micro",
+    "has_impact_on_key": "N/A",
+    "has_impact_on_value": "N/A" // No specific impact
+  },
+  "8": {
+    "name": "Spelling Bee Champion Invests College Fund in Meme Stocks",
+    "description": "The winner of a national spelling bee invests their entire college fund in meme stocks. Financial experts express concern, while teenagers everywhere praise the young investor's boldness. Meme stock prices (considered Crypto in this game)  increase by 10% next turn.",
+    "type": "micro",
+    "has_impact_on_key": "type",
+    "has_impact_on_value": "Crypto"
+  },
+  "9": {
+    "name": "Luxury Watch Brand Releases Timepiece Made Entirely of Cheese",
+    "description": "A luxury watch brand unveils a limited-edition timepiece crafted entirely from exotic cheeses. Cheese futures skyrocket, impacting the Materials sector. Material sector assets gain 10% next turn.",
+    "type": "micro",
+    "has_impact_on_key": "sector",
+    "has_impact_on_value": "Materials"
+  },
+  "10": {
+    "name": "Great Toilet Paper Panic of 2020",
+    "description": "Fears of a global pandemic lead to a mass hoarding of toilet paper, causing temporary shortages and inflated prices. Consumer Goods sector assets see a short-term price spike, followed by a sudden drop as the market stabilizes.",
+    "type": "macro",
+    "has_impact_on_key": "sector",
+    "has_instagram_on_value": "ConsumerGoods"
+  },
+  "11": {
+    "name": "Streaming Wars Escalate with Release of 'Bee Movie 2'",
+    "description": "Dreamworks Studios announces the surprise sequel \"Bee Movie 2\". Streaming services scramble to secure the rights, leading to a bidding war that inflates stock prices in the Communication Services sector. Communication Services assets gain 20% next turn.",
+    "type": "macro",
+    "has_impact_on_key": "sector",
+    "has_impact_on_value": "CommunicationServices"
+  },
+  "12": {
+    "name": "Accidental Purchase of Historic Van Gogh Painting by Monkey",
+    "description": "An orangutan at an art gallery accidentally presses a button during a live online auction, purchasing a multi-million dollar Van Gogh painting. The art market goes into a frenzy, impacting the value of all assets (positive or negative depending on risk tolerance). All asset values fluctuate by 5% next turn.",
+    "type": "macro",
+    "has_impact_on_key": "N/A",
+    "has_impact_on_value": "N/A" // No specific impact
+  },
+  "13": {
+    "name": "World's First Commercial Flight Powered by Hot Air Balloons",
+    "description": "A small airline company successfully completes the world's first commercial flight using a fleet of hot air balloons. Travel stocks plummet as investors question the future of airplanes. All assets in the Finance sector lose 10% next turn.",
+    "type": "macro",
+    "has_impact_on_key": "sector",
+    "has_impact_on_value": "Finance"
+  },
+  "14": {
+    "name": "Global Coffee Shortage Caused by Sleepy Baristas",
+    "description": "A collective case of the Mondays among baristas worldwide leads to a temporary coffee shortage. Coffee futures skyrocket, causing a price increase for Consumer Goods assets related to coffee.",
+    "type": "macro",
+    "has_impact_on_key": "sector",
+    "has_impact_on_value": "ConsumerGoods"
+  },
+  "15": {
+    "name": "Pet Rock Company Goes Public with Record IPO",
+    "description": "A company reviving the 1970s fad \"pet rocks\" launches a successful Initial Public Offering (IPO), raising millions of dollars. Consumer confidence soars, causing a temporary increase in all asset values by 3% next turn.",
+    "type": "macro",
+    "has_impact_on_key": "N/A",
+    "has_impact_on_value": "N/A" // No specific impact
+  },
+  "16": {
+    "name": "Accidental Release of Pink Dye Turns River Purple",
+    "description": "A factory accidentally releases a large amount of pink dye into a major river, turning it purple. Tourism booms in the affected area, positively impacting the local economy (potentially impacting assets in related sectors like Real Estate or Hospitality).",
+    "type": "macro",
+    "has_impact_on_key": "N/A",
+    "has_impact_on_value": "N/A" // No specific impact (potential sector impact depends on specifics)
+  },
+  "17": {
+    "name": "National Nap Day Declared by Overworked Employees",
+    "description": "A group of overworked employees successfully petitions their government to declare a national \"Nap Day\". Productivity concerns cause a temporary dip in stock prices across all sectors, followed by a slight recovery as companies implement napping pods for employees.",
+    "type": "macro",
+    "has_impact_on_key": "N/A",
+    "has_impact_on_value": "N/A" // No specific impact
+  },
+  "18": {
+    "name": "World Chess Champion Loses to Artificial Intelligence",
+    "description": "The reigning world chess champion loses his title against AI, sparking renewed interest in artificial intelligence research and development. Technology sector assets, particularly those related to AI, experience a surge in value (15% increase next turn).",
+    "type": "macro",
+    "has_impact_on_key": "sector",
+    "has_impact_on_value": "Technology"
+  }
 }

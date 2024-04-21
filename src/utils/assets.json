@@ -1,16 +1,404 @@
 {
     "1": {
-        "name": "",
-        "type": "",
-        "sector": "",
-        "price": 0,
-        "interest_rate": 0.0
+        "name": "Coca-Cola",
+        "ticker": "KO",
+        "type": "Stock",
+        "sector": "ConsumerGoods",
+        "price": 300,
+        "interest_rate": 0.4
     },
     "2": {
-        "name": "",
-        "type": "",
-        "sector": "",
-        "price": 0,
-        "interest_rate": 0.0
-    }
+        "name": "NVIDIA",
+        "ticker": "NVDA",
+        "type": "Stock",
+        "sector": "Semiconductors",
+        "price": 500,
+        "interest_rate": 0.8
+    },
+    "3": {
+        "name": "Apple",
+        "ticker": "AAPL",
+        "type": "Stock",
+        "sector": "Technology",
+        "price": 1250,
+        "interest_rate": 1.5
+    },
+    "4": {
+        "name": "Bitcoin",
+        "ticker": "BTC",
+        "type": "Crypto",
+        "sector": "N/A",
+        "price": 1800,
+        "interest_rate": 2.3
+    },
+    "5": {
+        "name": "Johnson & Johnson",
+        "ticker": "JNJ",
+        "type": "Stock",
+        "sector": "Healthcare",
+        "price": 400,
+        "interest_rate": 0.7
+    },
+    "6": {
+        "name": "Exxon Mobil",
+        "ticker": "XOM",
+        "type": "Stock",
+        "sector": "Energy",
+        "price": 250,
+        "interest_rate": 0.5
+    },
+    "7": {
+        "name": "JPMorgan Chase",
+        "ticker": "JPM",
+        "type": "Stock",
+        "sector": "Finance",
+        "price": 850,
+        "interest_rate": 1.2
+    },
+    "8": {
+        "name": ": Dow Chemical",
+        "ticker": "DOW",
+        "type": "Stock",
+        "sector": "Materials",
+        "price": 150,
+        "interest_rate": 0.4
+    },
+    "9": {
+        "name": "Tesla",
+        "ticker": "TSLA",
+        "type": "Stock",
+        "sector": "Technology",
+        "price": 1000,
+        "interest_rate": 2.0
+    },
+    "10": {
+        "name": "Meta Platforms (Facebook)",
+        "ticker": "META",
+        "type": "Stock",
+        "sector": "CommunicationServices",
+        "price": 650,
+        "interest_rate": 1.0
+    },
+    "11": {
+        "name": "American Express",
+        "ticker": "AXP",
+        "type": "Stock",
+        "sector": "Finance",
+        "price": 350,
+        "interest_rate": 0.6
+    },
+    "12": {
+        "name": "Ethereum",
+        "ticker": "ETH",
+        "type": "Crypto",
+        "sector": "N/A",
+        "price": 1400,
+        "interest_rate": 3.2
+    },
+    "13": {
+        "name": "Pfizer",
+        "ticker": "PFE",
+        "type": "Stock",
+        "sector": "Healthcare",
+        "price": 200,
+        "interest_rate": 0.3
+    },
+    "14": {
+        "name": "Bank of America",
+        "ticker": "BAC",
+        "type": "Stock",
+        "sector": "Finance",
+        "price": 450,
+        "interest_rate": 0.8
+    },
+    "15": {
+        "name": "Alphabet (Google)",
+        "ticker": "GOOG",
+        "type": "Stock",
+        "sector": "Technology",
+        "price": 1600,
+        "interest_rate": 1.8
+    },
+    "16": {
+        "name": "Dogecoin",
+        "ticker": "DOGE",
+        "type": "Crypto",
+        "sector": "N/A",
+        "price": 700,
+        "interest_rate": 4.2
+    },
+    "17": {
+        "name": "ASML Holding",
+        "ticker": "ASML",
+        "type": "Stock",
+        "sector": "Semiconductors",
+        "price": 600,
+        "interest_rate": 1.1
+    },
+    "18": {
+        "name": "ING Groep",
+        "ticker": "ING",
+        "type": "Stock",
+        "sector": "Finance",
+        "price": 900,
+        "interest_rate": 1.3
+    },
+    "19": {
+        "name": "Shell",
+        "ticker": "RDS.A",
+        "type": "Stock",
+        "sector": "Energy",
+        "price": 300,
+        "interest_rate": 0.6
+    },
+    "20": {
+        "name": "Samsung Electronics",
+        "ticker": "005930.KS",
+        "type": "Stock",
+        "sector": "Technology",
+        "price": 1100,
+        "interest_rate": 1.7
+    },
+    "21": {
+        "name": "Bank of China",
+        "ticker": "OCH.L",
+        "type": "Stock",
+        "sector": "Finance",
+        "price": 550,
+        "interest_rate": 0.9
+    },
+    "22": {
+        "name": "Tencent Holdings",
+        "ticker": "0700.HK",
+        "type": "Stock",
+        "sector": "Technology",
+        "price": 800,
+        "interest_rate": 1.4
+    },
+    "23": {
+        "name": "Nestlé",
+        "ticker": "NESN.SW",
+        "type": "Stock",
+        "sector": "ConsumerGoods",
+        "price": 450,
+        "interest_rate": 0.8
+    },
+    "24": {
+        "name": "Berkshire Hathaway",
+        "ticker": "BRK.A",
+        "type": "Stock",
+        "sector": "Finance",
+        "price": 4000,
+        "interest_rate": 2.5
+    },
+    "25": {
+        "name": "Visa",
+        "ticker": "V",
+        "type": "Stock",
+        "sector": "Finance",
+        "price": 750,
+        "interest_rate": 1.6
+    },
+    "26": {
+        "name": "US Treasury Bond",
+        "ticker": "UST",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 1000,
+        "interest_rate": 0.15
+    },
+    "27": {
+        "name": "European Corporate Bond",
+        "ticker": "ECB",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 800,
+        "interest_rate": 0.22
+    },
+    "28": {
+        "name": "Tether",
+        "ticker": "USDT",
+        "type": "Crypto",
+        "sector": "N/A",
+        "price": 100,
+        "interest_rate": 0.7
+    },
+    "29": {
+        "name": "Cardano",
+        "ticker": "ADA",
+        "type": "Crypto",
+        "sector": "N/A",
+        "price": 1200,
+        "interest_rate": 4.5
+    },
+    "30": {
+        "name": "Japanese Government Bond",
+        "ticker": "JGB",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 700,
+        "interest_rate": 0.12
+    },
+    "31": {
+        "name": "Binance Coin",
+        "ticker": "BNB",
+        "type": "Crypto",
+        "sector": "N/A",
+        "price": 400,
+        "interest_rate": 1.8
+    },
+    "32": {
+        "name": "Swiss Government Bond",
+        "ticker": "SGB",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 900,
+        "interest_rate": 0.08
+    },
+    "33": {
+        "name": {
+            "name": "Polkadot",
+            "ticker": "DOT",
+            "type": "Crypto",
+            "sector": "N/A",
+            "price": 850,
+            "interest_rate": 3.1
+        }
+    },
+    "34": {
+        "name": "Emerging Market Bond",
+        "ticker": "EMB",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 500,
+        "interest_rate": 0.28
+    },
+    "35": {
+        "name": "Chainlink",
+        "ticker": "LINK",
+        "type": "Crypto",
+        "sector": "N/A",
+        "price": 600,
+        "interest_rate": 2.7
+    },
+    "36": {
+        "name": "Corporate High-Yield Bond",
+        "ticker": "HY",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 800,
+        "interest_rate": 0.42
+      },
+      "37": {
+        "name": "Municipal Bond",
+        "ticker": "MUNI",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 950,
+        "interest_rate": 0.25
+      },
+      "38": {
+        "name": "Investment-Grade Corporate Bond",
+        "ticker": "IG",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 1200,
+        "interest_rate": 0.30
+      },
+      "39": {
+        "name": "Zero-Coupon Bond",
+        "ticker": "ZERO",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 500,
+        "interest_rate": 0.00
+      },
+      "40": {
+        "name": "Convertible Bond",
+        "ticker": "CVX",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 700,
+        "interest_rate": 0.18
+      },
+      "41": {
+        "name": "Treasury Inflation-Protected Securities (TIPS)",
+        "ticker": "TIPS",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 1050,
+        "interest_rate": 0.10
+      },
+      "42": {
+        "name": "Emerging Market Corporate Bond",
+        "ticker": "EMC",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 650,
+        "interest_rate": 0.35
+      },
+      "43": {
+        "name": "High-Yield Municipal Bond",
+        "ticker": "HY Muni",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 450,
+        "interest_rate": 0.50
+      },
+      "44": {
+        "name": "Savings Bond",
+        "ticker": "EE",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 100,
+        "interest_rate": 0.05
+      },
+      "45": {
+        "name": "Series I Bond",
+        "ticker": "I",
+        "type": "Bond",
+        "sector": "N/A",
+        "price": 100,
+        "interest_rate": 0.1
+      },
+      "46": {
+        "name": "Amazon",
+        "ticker": "AMZN",
+        "type": "Stock",
+        "sector": "Technology",
+        "price": 1700,
+        "interest_rate": 1.9
+      },
+      "47": {
+        "name": "Microsoft",
+        "ticker": "MSFT",
+        "type": "Stock",
+        "sector": "Technology",
+        "price": 1350,
+        "interest_rate": 1.6
+      },
+      "48": {
+        "name": "Netflix",
+        "ticker": "NFLX",
+        "type": "Stock",
+        "sector": "CommunicationServices",
+        "price": 800,
+        "interest_rate": 2.2
+      },
+      "49": {
+        "name": "American Tower Corporation",
+        "ticker": "AMT",
+        "type": "Stock",
+        "sector": "RealEstate",
+        "price": 280,
+        "interest_rate": 0.5
+      },
+      "50": {
+        "name": "Procter & Gamble",
+        "ticker": "PG",
+        "type": "Stock",
+        "sector": "ConsumerGoods",
+        "price": 600,
+        "interest_rate": 1.0
+      }
 }
